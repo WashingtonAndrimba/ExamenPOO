@@ -21,20 +21,22 @@ public class Aplicacion {
         
         Scanner leer=new Scanner(System.in);
         Scanner opcion=new Scanner(System.in);
-        System.out.println("Menu de eleccion");
+        System.out.println("Menu de multiple regisgtro");
         System.out.println("1-Empleado");
         System.out.println("2-Cliente");
         System.out.println("3-Directivo");
         System.out.println("4-Empresa");
-        System.out.println("5-Salir");
+        System.out.println("5-Salir"+"\n");
+        
+        System.out.println("Elija una opcion");
         int opc=opcion.nextInt();
         switch (opc){
             case 1: 
-                System.out.println("Menu de Empleados");
-                System.out.println("Ingrese La cedula, Nombre, Edad, Sueldo del empleado");
+                System.out.println("Menu de registro empleados");
+                System.out.println("Ingrese La Cedula, Nombre, Edad, Sueldo del empleado"+"\n");
                 Personas per=new Personas(leer.nextInt(),leer.next(),leer.nextInt());
                 Empleado emp=new Empleado(leer.nextInt());
-                System.out.println("Ingrese La cedula, Nombre, Edad, Sueldo del empleado numero dos");
+                System.out.println("\n"+"Ingrese La Cedula, Nombre, Edad, Sueldo del empleado numero dos");
                 Personas per2=new Personas(leer.nextInt(),leer.next(),leer.nextInt());
                 Empleado emp2=new Empleado(leer.nextInt());
                 System.out.println("");
@@ -48,7 +50,7 @@ public class Aplicacion {
             break;
             
             case 2:
-                System.out.println("Menu de clientes");
+                System.out.println("Menu de registro clientes"+"\n");
                 System.out.println("Ingrese la cedula, el nombre, edad y numero telefonico");
                 Personas pe=new Personas(leer.nextInt(),leer.next(),leer.nextInt());
                 Cliente tel=new Cliente(leer.nextInt());
@@ -90,7 +92,7 @@ public class Aplicacion {
                 System.out.println("Menu de la empresa");
                 System.out.println("Nombre de la empresa 1");
                 Empresa empr=new Empresa(leer.next());
-                System.out.println("Registro de un empleado y sus clientes");
+                System.out.println("Registro de un empleado y 2 de sus clientes");
                 System.out.println("Ingrese La cedula, Nombre, Edad del empleado");
                 Personas perrr=new Personas(leer.nextInt(), leer.next(), leer.nextInt());
                 System.out.println("Ingrese el cliente numero 1 y su numero Telefonico");
